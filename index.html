@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head>  
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Gerenciamento de Estoque</title> 
+    <link rel="stylesheet" href="css/index.css"> 
+</head>
+<body> 
+    <div class="logo" > 
+        <img src="css/logo.png">
+    </div>
+
+    <div class="box">
+<!--quando o formulário é enviado, os dados serão enviados para o arquivo login.php via metodo POST-->        
+        <form action="./php/login.php" method='POST'>
+            <fieldset> 
+                <legend><b>Gerenciamento de Estoque</b></legend> <!--define o título-->
+                <br> <!--quebra de linha para separar o título-->
+                <div class="inputBox">
+<!--campo de entrada obrigatório de tipo texto, nome e id do campo sendo login, id serve para referenciar no rótulo-->                    
+                    <input type="text" name="login" id="login" class="inputUser" required>
+                    <label for="login" class="labelInput">Login</label> <!--representa um rótulo para um item em uma interface de usuário-->
+                </div>
+                <br><br>
+                <div class="inputBox">
+<!--campo de entrada obrigatório de tipo texto, nome e id do campo sendo senha, id serve para referenciar no rótulo-->                    
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label> <!--representa um rótulo para um item em uma interface de usuário-->
+                </div>
+                <br><br>
+<!-- Define um botão que, quando clicado, envia os dados do formulário arquivo login.php para processamento-->                
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

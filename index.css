@@ -1,0 +1,75 @@
+body{
+    background-color: #003050; /*COR DA TELA DE FUNDO*/
+    font-size: 16px; /* Define o tamanho base da fonte */
+}
+
+.logo{
+    text-align: center;
+}
+
+.box {
+    color: white; /*Define a cor do texto dentro da caixa*/
+    position: absolute;/*Remove o elemento do fluxo normal do documento e permite posicioná-lo de forma absoluta, usando as propriedades top/left*/
+    top: 78%; /*Posiciona a caixa a 78% da altura da página, a partir do topo*/
+    left: 50%; /*Posiciona a caixa a 50% da largura da página, a partir da esquerda*/
+    transform: translate(-50%,-50%); /**/
+    background-color: rgba(0, 0, 0, 0.6); /**/
+    padding: 15px; /**/
+    border-radius: 15px; /**/
+    width: 20rem; /**/
+}
+
+legend {
+    border: 1px solid rgb(0, 255, 64);
+    padding: 5px; /*Cria um espaço interno em todos os lados do conteúdo do elemento, afastando o texto da borda.*/
+    text-align: center; /*Alinha o texto dentro do elemento para o centro*/
+    background-color: rgb(30, 255, 0); /*Define a cor de fundo do elemento*/
+    border-radius: 8px; /*Arredonda as bordas do elemento*/
+}
+
+.inputBox{
+    position: relative; /*define o local dos inputs LOGIN e SENHA, centralizando ambos*/
+}
+
+.inputUser{
+    background: none; /*Remove o fundo padrão do campo de entrada, tornando-o transparente*/
+    border: none; /*Remove a borda padrão do campo de entrada*/
+    border-bottom: 1px solid white; /*Adiciona uma borda inferior sólida de 1 pixel na cor branca ao campo*/
+    outline: none; /**/
+    color: white; /**/
+    font-size: 15px; /**/
+    width: 100%; /**/
+    letter-spacing: 2px; /**/
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+
+#submit {  /* # = permitindo aplicar estilos personalizados a um elemento com aquele ID*/
+    background-color: white; /*Define a cor de fundo do botão*/
+    width: 100%; /*Faz o botão ocupar 100% da largura*/
+    border: none; /*Remove a borda do botão*/
+    padding: 15px; /*Adiciona um espaço interno de 15 pixels em todos os lados do botão*/
+    color: rgb(0, 0, 0); /*Define a cor do texto do botão como preto*/
+    font-size: 15px; /*Define o tamanho da fonte do texto do botão como 15 pixels*/
+    cursor: pointer; /*altera a forma do cursor ao passar o mouse*/
+    border-radius: 10px; /*Arredonda as bordas do botão em 10 pixels*/
+}
+
+#submit:hover { /*altera a cor do botão ao passar o cursor do mouse sobre o elemento*/
+    background-color: rgb(21, 255, 0); /**/
+    color: rgb(255, 255, 255); /**/
+}

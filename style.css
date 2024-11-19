@@ -1,0 +1,68 @@
+body { /*TELA DE FUNDO*/
+    height: 100vh; /*RESOLVEU O PROBLEMA DO TAMANHO DA TELA*/
+    background-color: #7e390b; /*COR DA TELA DE FUNDO*/
+    font-size: 16px; /* Define o tamanho base da fonte */
+}
+
+form { /*FORMULARIO*/
+    margin-bottom: 2rem; /*ESTABELECE UMA MARGEM DE DISTÂNCIA DA BARRA DE PESQUISA*/
+}
+
+table, th, td { /*DESINGER TABELA*/
+    border: 1px solid #f1deeb; /*BORDAS DA TABELA*/
+    border-collapse: collapse; /*deixa a borda apenas uma linha fina*/
+}
+
+table {  
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+}
+
+th, td { /*LINHAS E CELULAS DA TABELA */
+    padding: 0.5rem; /*distância entre o conteúdo e a borda // de px para rem por responsividade*/
+    text-align: center; /*alinha o texto/células no centro*/
+}
+
+.deletar { 
+    background-color: red; /*cor do botão deletar*/
+    color: white; /*cor nome deletar*/
+    cursor: pointer; /*altera a forma do cursor ao passar o mouse*/
+    padding: 10px; /* Ajuste o padding para botões // altura, largura*/
+    border-radius: 10px; /*Arredonda as bordas das parte input*/
+}
+
+.deletar:hover { /*altera a cor do botão ao passar o cursor do mouse sobre o elemento*/
+    background-color: #790404;
+}
+
+.quantity_data { 
+    background-color: #159c35; /*cor dos botões atualizar*/
+    color: white; /*cor do nome atualizar*/
+    cursor: pointer; /*altera a forma do cursor ao passar o mouse*/
+    padding: 5px; /* Ajuste o padding para botões // altura, largura*/
+    border-radius: 10px; /*Arredonda as bordas das parte input*/
+}
+
+.quantity_data:hover { /*altera a cor do botão ao passar o cursor do mouse sobre o elemento*/
+    background-color: #0c6421;
+}
+
+.sair {
+    text-decoration: none; /*Remove a decoração padrão dos links, como o sublinhado*/
+    padding: 0.7rem; /*Adiciona um espaço interno de 10 pixels em todos os lados do botão*/
+    background-color: red; /*cor dos botão SAIR*/
+    color: white; /*cor do nome SAIR*/
+    border-radius: 15px; /*Arredonda as bordas do botão*/
+    position: fixed; /*posição fixa do botão no canto direito*/
+    top: 20px; /*posição em relação ao topo da tela*/
+    right: 20px; /*distância em relação a lateral da tela*/    
+}
+
+.sair:hover { /*altera a cor do botão ao passar o cursor do mouse sobre o elemento*/
+    background-color: #790404;
+}
+
+input { /*CONFIG DE BUTÕES e BARRA*/
+    padding: 5px;
+    border-radius: 10px; /*Arredonda as bordas das parte input*/
+}
+
